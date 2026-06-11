@@ -1,0 +1,45 @@
+/*
+#title {
+    color: yellow;
+}
+*/
+h2.title {
+    color: blue;
+}
+h2 {
+    color: red;
+}
+input {
+    border: thin solid red;
+}
+input[type="text"] {
+    border: thin solid blue;
+}
+input[type="password"] {
+    border: thin solid green;
+}
+a[href$=".net"] {
+    color: red;
+}
+a[href$=".dev"] {
+    color: yellow
+}
+a[href^="https"] {
+    color: violet
+}
+/* a[href^="http"] {
+    color: pink
+} */
+a[href*="react"] {
+    color: brown;
+}
+a[class~="test03"] {
+    color: purple;
+}
+p[class|="title"] {
+    color: silver;
+}
+
+h1, h2 {
+    color: red;
+}
