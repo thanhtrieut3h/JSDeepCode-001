@@ -1,0 +1,144 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+}
+section.box {
+    margin-top: 4rem;
+}
+section.box :first-child {
+    color: red;
+}
+section.box :last-child {
+    color: rgb(140, 0, 255);
+}
+section.box :first-of-type {
+    color: rgb(47, 255, 0);
+}
+section.box :last-of-type {
+    color: green;
+}
+section.box :nth-last-child(4){
+    color: pink;
+}
+section.box :nth-last-of-type(2) {
+    color: violet;
+}
+section.box :nth-child(3) {
+    color: skyblue;
+}
+section.box :nth-of-type(3) {
+    color: burlywood;
+}
+input[type="text"]:focus {
+    width: 500px;
+    border: thin green solid;
+    outline: none;
+}
+input[type="checkbox"]:checked {
+    width: 100px;
+    height: 100px;
+}
+a[href$=".dev"]:hover {
+    color: green;
+    text-decoration: none;
+}
+p.content::first-letter {
+    color: red;
+    font-size: 100px;
+}
+p.content::before {
+    /* content: "Hi you, "; */
+    content: url("../images/favicon.ico");
+}
+p.content::after {
+    content: " Good bye !";
+}
+p.content::first-line {
+    color: pink;
+    font-weight: bold;
+}
+p.content::selection {
+    color: yellow;
+    font-style: italic;
+}
+div.parent {
+    color: red;
+}
+p.title {
+    color: blueviolet;
+}
+
+section.main {
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    background-image: url("../images/test.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center center;
+    border: thin solid blue;
+}
+section.primary {
+    width: 500px;
+    height: 500px;
+    border: thin solid red;
+    /* border-right: thin solid red; */
+    margin-top: 20px;
+    margin-left: 20px;
+    /* padding-top: 20px;
+    padding-left: 20px; */
+    /* padding: 20px 10px 5px 20px; */
+    padding: 20px 20px 5px 10px;
+}
+p.text {
+    /* padding-top: 20px;
+    padding-left: 20px; */
+    border: thin dotted blue;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+main > section.content {
+    width: 30rem;
+    height: 30rem;
+    /* display: inline-block; */
+}
+main > section.content-first {
+    border: thin solid red;
+}
+main > section.content-second {
+    border: thin solid green;
+    position: relative;
+}
+main > section.content-third {
+    border: thin solid blue;
+}
+/* img.icon {
+    position: relative;
+    left: 40rem;
+    top: 15rem;
+} */
+ img.icon {
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+}
+.nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #f110d0;
+    position: fixed;
+    top: 0;
+}
